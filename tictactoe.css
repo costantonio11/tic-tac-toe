@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+.container {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.cell {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+}
+.cell:first-child, .cell:nth-child(2), 
+.cell:nth-child(3) {
+    border-top: none;
+}
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.cell:nth-child(3n + 1)
+{
+    border-left: none;
+}
+
+.cell:last-child, .cell:nth-child(8),
+.cell:nth-child(7) {
+    border-bottom: none;
+}
